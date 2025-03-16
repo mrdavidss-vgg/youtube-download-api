@@ -1,7 +1,7 @@
 const express = require('express');
 const { exec } = require('child_process');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Endpoint to fetch the download URL
 app.get('/download', (req, res) => {
